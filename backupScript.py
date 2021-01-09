@@ -14,7 +14,7 @@ string, host_ip, user_name, pass_word = argv
 dest_file = open('back_fail_log', 'a')
 host_dev = open(host_ip)
 script_date = datetime.datetime.now()
-current_time = script_date.strftime("_:[%d-%b-%Y %H:%M:%S]")
+current_time = script_date.strftime("[%d-%b-%Y %H:%M:%S]")
 
 with open(host_ip) as f:
     dev_host = f.read().splitlines()
